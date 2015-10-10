@@ -67,7 +67,7 @@ node * findLoopHead( node* head)
             hare = hare->next->next;
         }
     }
-    printf("Successfully Looped at %i \n",tortoise->value);
+    //printf("Successfully Looped at %i \n",tortoise->value);
     /* Now we got the member of the loop, lets find the length */
     int count = 0;
     
@@ -107,6 +107,6 @@ int main()
     createLoop(head,4);
     
     loopHead = findLoopHead(head);
-    printf("Successfully Looped at %i \n",loopHead->value);
+    printf("Found the Loop Head Loop Head is at %i \n",loopHead->value);
     return 0;
 }
